@@ -30,6 +30,9 @@ io.on('connction',function(socket){
     })
 })
 
-server.listen(5500,function(){
-    console.log("server started");
+let port =process.env.PORT ||3000
+
+//tcp port 5500
+server.listen(port,function(){
+    console.log("Server started at port ",port);
 })
