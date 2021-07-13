@@ -5,10 +5,12 @@ const VideoGrid=document.getElementById('video-grid');
 
 const myPeer=new Peer(undefined,{
 
-    host:'/',
-    port:'3001',
+    host:'https://zoomcloneapp5574.herokuapp.com/670b8af6-b3ad-4933-8271-52f15cbfaf40',
+    secure:true,
+    port:'443',
     
 })
+// peer = new Peer({host:'peerjs-server.herokuapp.com', secure:true, port:443})
 
 const myVideo=document.createElement('video');
 myVideo.muted=true;
